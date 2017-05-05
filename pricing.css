@@ -28,7 +28,7 @@ ul,ul li{
 a{
 	text-decoration: none;
 	color: inherit;
-	/*text-transform: uppercase;*/
+	text-transform: uppercase;
 }
 
 
@@ -85,32 +85,29 @@ a{
 	font-size: 16px;
 	border-radius: 4px;
 	z-index: 3;
-	font-weight: 300;
+	font-weight: 400;
+	animation: pulse 1s infinite alternate;
+}
+
+@keyframes pulse{
+	0%{
+		transform: scale(1);
+	}
+	100%{
+		transform: scale(1.1, 1.1);
+	}
+}
+
+@-webkit-keyframes pulse{
+	0%{
+		transform: scale(1);
+	}
+	100%{
+		transform: scale(1.1, 1.1);
+	}
 }
 
 @media only screen and (max-width: 600px){
 	.columns{
 		width: 100%;
-		padding: 20px;
-	}
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+		padding: 20p
